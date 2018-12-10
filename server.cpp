@@ -7,7 +7,7 @@ using namespace NetworkCore;
 
 Server::Server(asio::io_service* ioService, unsigned short port) :
     _ioService(ioService),
-    _acceptor(*ioService, asio::ip::tcp::endpoint(asio::ip::tcp::v4(), port))
+    _acceptor(*ioService, asio::ip::tcp::endpoint(asio::ip::tcp::v6(), port))
 {
 }
 
